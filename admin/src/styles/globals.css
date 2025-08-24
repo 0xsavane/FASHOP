@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .guinea-flag {
+    background: linear-gradient(to right, #ce1126 33%, #fcd116 33% 66%, #009639 66%);
+  }
+  
+  .tab-btn {
+    @apply px-4 py-2 font-medium text-gray-600 border-b-2 border-transparent transition-all duration-200 cursor-pointer hover:text-primary-600;
+  }
+  
+  .tab-btn.active {
+    @apply text-primary-600 border-primary-600;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors duration-200;
+  }
+}
